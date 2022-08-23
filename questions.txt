@@ -1,0 +1,50 @@
+1.Your React application is rendering a page very slowly. How are you going to investigate and/or fix the issue?
+
+=> The way i would go if a react app is rendering a page slowly is:
+
+a.first check if any page is re-rendering a lot of times
+b.check if any functions or requests are running abnormally
+c.try to lazy load only the required resources up front
+d.remove any code redundency
+e.try to optimize code
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+2.What is the difference between filter and map
+
+=> map creates a new array by transforming every element in an array individually. 
+filter creates a new array by removing elements that don't belong.
+
+example:-
+
+for filter:-
+const ages = [32, 33, 16, 4];
+const result = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
+here the output is 32,33
+
+
+for map:-
+
+const numbers = [65, 44, 12, 4];
+const newArr = numbers.map(myFunction)
+
+function myFunction(num) {
+  return num * 10;
+}
+
+here output is 650,440,120,40
+
+----------------------------------------------------------------------------------------------------------------
+
+4.What technical aspects of React do you struggle with?
+
+up until now, i have  learned fundamental concepts of react. There is still a lot to
+learn for me. I do not have any problems with basic concepts such as Router, Basic Hooks,
+state, lifeCycle , Components , basic redux including the concepts used in this application.
+So for now, i would have to say the aspects i struggle with react are the more advanced topics
+of react that i have not learned yet.
